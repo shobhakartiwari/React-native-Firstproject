@@ -7,9 +7,11 @@ const text_info = "Hi Shobhakar this side" ;
 
 //Function returning JSX
 const Home = () => {
-    return <View>
+    return (
+    <View>
             <Text style={styles.fontSize}>{text_info}</Text>
-         </View>
+    </View>
+);
 };
 
 

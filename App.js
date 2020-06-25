@@ -2,14 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import Home from './src/screens/Home'
-
+import Home from './src/screens/Home';
+import ListScreen from './src/screens/ListScreen';
 const navigator = createStackNavigator(
   {
-    Home: Home
+    Home: Home,
+    List : ListScreen
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "List",
     defaultNavigationOptions: {
       title: "First react native project"
     }
